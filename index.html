@@ -2,112 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="TCER Wifi Test: Prueba de velocidad de Internet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCER Wifi Test - Prueba de velocidad de Internet</title>
-    <link rel="stylesheet" href="./asset/css/style.css">
-    <link rel="shortcut icon" href="./icono.webp" type="image/svg+xml">
+    <title>Error</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-              <img src="./asset/img/logo_tcer_wifi_test.webp" alt="Logo de TCER Wifi Test">
-        </div>
-        <nav>
-           <ul class="nav-links">
-                <li><a href="./asset/html/porque.html">¿Por qué TCER Wifi Test?</a></li>
-                <li><a href="https://tcer.com.do/">TCER</a></li>
-           </ul>            
-        </nav>
-  
-  <!---->        <a onclick="openNav()" class="menu" href="#"><img src="./asset/img/menu.svg" alt="" width="30"></a>
-  
-  <!---->        <div id="mobile-menu" class="overlay">
-  <!---->            <a onclick="closeNav()" href="https://wifi.tcer.com.do/" class="close">&times;</a>
-  <!---->            <div class="overlay-content">
-  <!---->                <a href="./asset/html/porque.html">¿Por qué TCER Wifi Test?</a>
-  <!---->                <a href="https://tcer.com.do/">TCER</a>
-  <!---->            </div>
-  <!---->        </div>
-  
-    </header>
-    <br>
-    <br>
-    <br>
-        <div class="contan">
-            <div class="loadere-widget">
-                <h1>TCER Wifi Test</h1>
-                <span class="loader hide"></span>
-                <div class="loader-content">
-                    <div class="content hide">24<small>Mbps</small></div>
-                    <button>Inicio</button>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <footer class="footer">
-            <nav class="nav">
-                <h4 class="nav__title">© 2024 TCER Wifi Test / by TCER</h4>
-            </nav>
-    
-            <div class="social">
-                <a href="https://tcer.com.do/">
-                    <img class="social__img" src="./asset/img/Logo_TCER(SVG) (1).svg"  width="100" alt="Logo TCER">
-                </a>
-            </div>
-    
-            <div class="more">
-                <a class="more__link" href="https://tcer.com.do" target="_blank">TCER Company</a> 
-                <a class="more__link" href="https://traductor.tcer.com.do/" target="_blank">TCER Translator</a> 
-            </div>
-        </footer>
-      
-    
+    <center>
+        <h1 style="font-size: 18px; color: rgb(22, 68, 183); padding-top: 150px;">“Gracias por dejarnos ser parte de su conexión. TCER WiFi Test se despide con gratitud. ¡Hasta siempre!”</h1>
+    <img src="./Tcer_Tristeza.svg" alt="" width="200px">
+    </center>
 </body>
-<script>
-    document.querySelector('button').addEventListener('click', (e) => {
-        var imageLink = 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Tokyo_Sky_Tree_2012.JPG',
-            downloadSize = 8185374,
-            time_start, time_end, 
-            downloadSrc = new Image();
-        document.querySelector('.loader-content').classList.add('hide');
-        document.querySelector('.loader').classList.remove('hide');
-        time_start = new Date().getTime();
-        var cacheImg = '?nn' + time_start;
-        downloadSrc.src = imageLink + cacheImg;
-        console.log(downloadSrc);
-        downloadSrc.onload = function () {
-            time_end = new Date().getTime();
-            var timeDuration = (time_end - time_start) / 1000,
-                loadeBytes = downloadSize * 8,
-                totalSpeed = ((loadeBytes / timeDuration) / 1024 / 1024 ).toFixed(2);
-            let i=0, speedOut;
-            const animate = () => {
-                if (i < totalSpeed){
-                    document.querySelector('.content').innerHTML = i.toFixed(2) + '<small>Mbps</small>';
-                    setTimeout(animate, 20);
-                    i+= 1.02;
-                }
-                else{
-                    document.querySelector('.content').innerHTML = totalSpeed + '<small>Mbps</small>';
-                }
-            }
-            animate();
-
-            document.querySelector('.loader-content').classList.remove('hide');
-            document.querySelector('.loader-content').classList.add('result');
-            document.querySelector('.loader').classList.add('hide');
-            document.querySelector('.content').classList.remove('hide');
-
-        }
-    })
-    function openNav(){
-        document.getElementById("mobile-menu").style.width = "100%";
-    }
-
-    function closeNav(){
-        document.getElementById("mobile-menu").style.width = "0%";
-    }
-</script>
 </html>
